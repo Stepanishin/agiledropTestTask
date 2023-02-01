@@ -1,0 +1,58 @@
+@import "../../assets/variables.scss";
+
+.FilterPanel {
+  width: 260px;
+  min-width: 260px;
+  margin-top: 12px;
+
+  @media screen and (width < 750px) {
+    width: 100%;
+  }
+
+  .filters_container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    border-radius: $imageBorderRadius;
+
+    .filters_btn_container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      align-items: center;
+      padding: 14px 16px;
+
+      h3 {
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .FilterPanel_search_btn {
+    color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+    height: 44px;
+    background-color: $btnBackgroundColorBasic;
+    font-size: 1.5em;
+    &:hover {
+      background-color: $btnBackgroundColorBasicHover;
+    }
+    &:disabled {
+      color: rgba(0, 0, 0, 0.5);
+      background-color: $btnBackgroundColorBasicDisabled;
+      backdrop-filter: blur(10px);
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../assets/variables.scss";
+
+.Genres_List {
+  padding-left: 15px;
+  .Genres_List_container {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: auto;
+    .genre_btn {
+      display: inline-flex;
+      border: 1px solid #9e9e9e;
+      border-radius: 14px;
+      padding: 4px 12px;
+      font-size: 0.9em;
+      color: #000;
+      &:hover {
+        background-color: $btnBackgroundColorBasic;
+        color: #fff;
+        border-color: $btnBackgroundColorBasic;
+      }
+    }
+    .genre_btn_selected {
+      display: inline-flex;
+      border: 1px solid #9e9e9e;
+      border-radius: 14px;
+      padding: 4px 12px;
+      font-size: 0.9em;
+      color: #fff;
+      background-color: $btnBackgroundColorBasic;
+    }
+  }
+}

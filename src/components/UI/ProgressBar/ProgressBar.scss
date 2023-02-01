@@ -1,0 +1,51 @@
+.ProgressBar_container {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(25, 41, 25);
+  top: -20px;
+  left: 10px;
+  @media screen and (width < 750px) {
+    display: none;
+  }
+}
+
+.circle_container {
+  position: absolute;
+  top: 3px;
+  left: 2.5px;
+}
+
+.ring-progress {
+  width: 35px;
+  height: 35px;
+}
+
+.ring-progress__background {
+  fill: none;
+  stroke-width: 8px;
+}
+
+.ring-progress__fill {
+  fill: none;
+  stroke-width: 8px;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.ProgressBar_procent {
+  display: block;
+  position: absolute;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  top: 14px;
+  left: 11px;
+  span {
+    position: absolute;
+    font-size: 0.5em;
+  }
+}
+

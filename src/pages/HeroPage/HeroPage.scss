@@ -1,0 +1,9 @@
+.movies_filter_container {
+  display: flex;
+  gap: 30px;
+  @media screen and (width < 750px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
